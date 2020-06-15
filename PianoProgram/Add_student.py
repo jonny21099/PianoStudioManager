@@ -11,9 +11,8 @@ def Add_student(c, conn):
 	user_response = input("Are you sure you are satisfied with all the entries(y/n)?\nname = %s\nday = %s\ntime = %s\nlength = %s\nprice = %s\n" % (student_name, lesson_day, lesson_time, lesson_length, lesson_price))
 	if user_response.lower() == "y":
 		today = date.today()
-		today_date = today.strftime("%m/%d/%Y")
 		print("Adding student to database")
-		c.execute("INSERT INTO calendar VALUES (?, ?, ?, ?, ?, ?, ?, ?)", (student_name, lesson_day, lesson_time, lesson_length, lesson_price, 0, 0, today_date))
+		c.execute("INSERT INTO calendar VALUES (?, ?, ?, ?, ?, ?, ?, ?)", (student_name, lesson_day, lesson_time, lesson_length, lesson_price, 0, 0, today))
 		conn.commit()
 		#Add student to database
 	elif user_response.lower() == "n":
