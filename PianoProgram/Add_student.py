@@ -3,7 +3,7 @@ from datetime import date
 	
 def Add_student(c, conn):
 	student_name = input("What is the student's name?\n")
-	lesson_day = input("On what days do you teach this student?\n")
+	lesson_day = input("On what days do you teach this student(0-6)?\n")
 	lesson_time = input("At what time do you teach this student?\n")
 	lesson_length = input("How long is each lesson?\n")
 	lesson_price = input("How much are you charging each lesson?\n")
