@@ -21,8 +21,8 @@ def Calendar():
 	#View all lessons
 	elif user_option == "2":
 		Update_information(c, conn)
-		time.sleep(0.5)
-		os.system("clear")
+		# time.sleep(0.5)
+		# os.system("clear")
 
 	#Add new students
 	elif user_option == "3":
