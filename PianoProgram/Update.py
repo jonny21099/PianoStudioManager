@@ -14,7 +14,3 @@ def Update_information(c, conn):
 			number_of_weekdays = int(np.busday_count(result[index][3], str(today), weekmask = result[index][1]))
 			c.execute("UPDATE calendar SET last_updated = ?, total_lessons = total_lessons + ?, total_price = total_price + (? * ?) WHERE student_name = ?", (today, number_of_weekdays, number_of_weekdays, result[index][2], result[index][0]))
 			conn.commit()
-	else:
-		print("This is the latest update")
-		print("\n")
-	
