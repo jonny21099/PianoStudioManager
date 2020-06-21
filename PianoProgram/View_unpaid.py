@@ -11,3 +11,8 @@ def View_unpaid(c, conn):
 		for each in result:
 			print("|{:^12}|{:^13}|{:^12}|{:^13}|{:^11}|{:^12}|".format(each[0], str(each[1]) + " minutes", "$" + str(each[2]) + " hourly", str(each[3]) + " lessons", "$" + str(each[4]), each[5]))
 		print("\n")
+	action = input("What would you like to do?\n1.Make a payment\n2.Go back\n3.Quit\n")
+	# if action == "2":
+	
+		
+
