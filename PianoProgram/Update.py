@@ -1,10 +1,13 @@
 import os 
+import time
 from datetime import date
 from datetime import datetime
 from datetime import timedelta
 import numpy as np
 
 def Update_information(c, conn):
+	print("Updating... Please wait")
+	time.sleep(3)
 	today = date.today()
 	c.execute("SELECT student_name, lesson_day, lesson_price, last_updated FROM calendar")
 	result = c.fetchall()
