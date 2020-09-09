@@ -5,6 +5,7 @@ import os
 import time
 import sqlite3
 
+#Main Interface
 def main():
 	print("Welcome to PianoProgram")
 	Login()
