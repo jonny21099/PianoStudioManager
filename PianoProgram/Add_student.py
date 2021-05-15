@@ -8,7 +8,6 @@ def Add_student(c, conn):
 	lesson_length = input("How long is each lesson?\n")
 	lesson_price = input("How much are you charging each lesson?\n")
 	os.system("clear")
-	print("test")
 	user_response = input("Are you sure you are satisfied with all the entries(y/n)?\nname = %s\nday = %s\ntime = %s\nlength = %s\nprice = %s\n" % (student_name, lesson_day, lesson_time, lesson_length, lesson_price))
 	if user_response.lower() == "y":
 		today = date.today()
